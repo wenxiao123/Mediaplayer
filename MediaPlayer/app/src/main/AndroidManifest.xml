@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wenxiao.mediaplayer">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".application.PlayMusicApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/title"
+        android:label="自制音乐播放器"
+        android:roundIcon="@drawable/title"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".otherActivity"/>
+        <activity android:name=".Fragments.Fragment_singone"/>
+        <activity android:name=".Fragments.Fragment_alumone"/>
+        <activity android:name=".Fragments.Time"/>
+        <service android:name=".service.PlayMusicService"/>
+    </application>
+
+</manifest>

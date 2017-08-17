@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f4f7"
+    android:weightSum="1">
+<com.example.wenxiao.mediaplayer.RoundImageView
+    android:id="@+id/roundImageView"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/timg33"/>
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="103dp"
+        android:layout_height="59dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="1.03">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="11111"
+            android:textColor="#111111" />
+        <TextView
+            android:id="@+id/tvArtist"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1111"
+            android:textColor="#111111" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/idPlay"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:src="@drawable/zh1"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/idNext"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:src="@drawable/zn2"
+        android:text="" />
+</LinearLayout>

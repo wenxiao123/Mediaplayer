@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tim"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.wenxiao.mediaplayer.RoundImageView
+                android:id="@+id/btn1"
+                android:layout_width="67dp"
+                android:layout_height="58dp"
+                android:onClick="toggleMenu"
+                android:src="@drawable/title"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="自制播放器"
+                android:textColor="#f3f5f7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tim"
+            app:tabIndicatorColor="#ea354a"
+            app:tabSelectedTextColor="#22ed4e"
+            app:tabTextAppearance="@style/Tablayout"
+            app:tabTextColor="#ffffff" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+
+        <fragment
+            android:id="@+id/btn3"
+            android:name="com.example.wenxiao.mediaplayer.Fragments.Fragment_player"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
